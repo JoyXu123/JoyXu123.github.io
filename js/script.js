@@ -1,4 +1,4 @@
-$(document).ready(function{
+$(document).ready(function(){
     $('.hobbyList').bind("mouseover", function(){
         var color = $(this).css("background-color");
 
