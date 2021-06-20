@@ -2,9 +2,11 @@
 
 My personal website has 3 internal links in my headerbar on top of my home page.
 1. "Home" tab links to index.html
+![home](/images/home-screenshot.png)
 2. "Hobby&Interest" tab links to hobby.html
+![hobby](/images/hobby-screenshot.png)
 3. "CV" tab links to my resume.pdf.
-
+![cv](/images/cv-screenshot.png)
 
 How bullet points are addressed.
 1. Landing page is the index.html.
@@ -16,4 +18,5 @@ How bullet points are addressed.
 - all kinds of project points link to my external project page on github.
 (All these links open a new tab)
 5. HTML Table with CSS Styling is used in "Online Courses Taken" Section.
-6. Interactive Component is added in hobby.html. Whenever my curser moves to a new division, the new division will be highlighted.
+6. Interactive Component is added in hobby.html. Whenever my curser moves to a new division of my hobby, the new division will be highlighted in grey.
+7. I have used the media query in css to make sure my personal website can be displayed properly on all types of devices.
