@@ -15,4 +15,5 @@ How bullet points are addressed.
 - "Tina Eliassi-rad" links to my advisor's home page.
 - all kinds of project points link to my external project page on github.
 (All these links open a new tab)
-5. 
+5. HTML Table with CSS Styling is used in "Online Courses Taken" Section.
+6. Interactive Component is added in hobby.html. Whenever my curser moves to a new division, the new division will be highlighted.
