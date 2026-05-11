@@ -18,23 +18,19 @@
 		<div class="topnav">
     		
         	<a class="active" href="/">Home</a>
-			<a href="/hobby.html">Hobby&Interest</a>
+			<a href="/hobby.html">Hobby &amp; Interest</a>
 			<a href="files/JingyiXu-CV-2021.pdf">CV</a>
     		
 		</div>
 		<div class="container">
     		<div>
         		<h1>Joy Jingyi Xu</h1>
-			<img src="/images/self.jpg" alt="Joy's photo" width="170" height="180" >
-			<h2>I am a doctoral student at Northeastern University's <a href="http://networkscienceinstitute.org" target="_blank">Network Science Institute</a>,advised by <a href="http://eliassi.org/" target="_blank">Tina Eliassi-Rad</a>.
-				My research focuses on comparing Graph Embedding Methods, to bridge between Computer Science and Network Science.
-				My research interests are in Network Science, Machine Learning, Data mining and Algorithms. 
-				I am interested in designing and applying Machine Learning algorithms, especially interested in combining Machine Learning methods with traditional algorithms. I am also interested in developing models for estimation and prediction.
-
-				I get my bachelor degree with a major in Mathematics and minor in Computer Science from University of Michigan in 2014. Before going back to graduate school in UCLA Computer Science in 2016, I worked as actuary in Asset Liability Management Department in Sun Life Financial in Boston Metropolitan Area. 
-				I got my master degree in Computer Science from University of California, Los Angeles (UCLA) in 2018, with a focus on Machine Learning.
-			</h2>
-				
+			<img class="profile-photo" src="/images/self.jpg" alt="Portrait of Joy Jingyi Xu">
+			<h2>About Me</h2>
+			<p>I am an advanced software engineer at Siemens NX CAD (Computer-Aided Design). I worked in NX Diagramming team. </p>
+			<p>Before that, I was a doctoral student at Northeastern University's <a href="http://networkscienceinstitute.org" target="_blank">Network Science Institute</a>, advised by <a href="http://eliassi.org/" target="_blank">Tina Eliassi-Rad</a>. My research at Northeastern focused on comparing graph embedding methods, the interaction of math, computer science and network science. I was especially interested in combining machine learning methods with traditional algorithms and in developing models for estimation and prediction. My broader research interests included network science, machine learning, data mining, and algorithms. I left my PhD program to focus on building software, learning beyond formal boundaries, exploring and pursuing faster feedback loops through real-world products.</p>
+			<p>I earned my master's degree in Computer Science from the University of California, Los Angeles (UCLA), in 2018, with a focus on machine learning. I published my research with my labmates, and professor Guy Van den Broeck in ICML 2018.</p>
+			<p>I earned my bachelor's degree in Mathematics, with a minor in Computer Science, from the University of Michigan in 2014. Before returning to graduate school in UCLA Computer Science in 2016, I worked as an actuary in the Asset Liability Management Department at Sun Life Financial in the Boston metropolitan area.</p>
     		</div>
 		</div><!-- /.container -->
 
@@ -42,11 +38,13 @@
 		<div class="Project">
 		  <h2>Self-Initiated Project</h2>
 		  <ul>
-		    <li>Software Construction Project: convert research PDFs into audio files so that users
-		      can listen to research papers. Current text-to-speech tools also convert table contents, headers and footnotes 
-		      to audios, causing users unable to make sense of the research paper contents. Our tool identify and get rid of
-		      urls, headers, footnotes, and math formulars, thus the comprehension of users on research paper contents improves.
-		      Future work can be done: how to sensibly read math formulars to users using automatic text-to-speech tools.
+			<li><strong>Peter Lynch Stock Analysis Tool</strong>: I built a Python web app that analyzes stocks using Peter Lynch's investment methodology. Enter any stock ticker and get an instant Lynch-style analysis — PEG ratio, 10-bagger potential, dividend-adjusted Lynch formula, debt assessment, and an overall Lynch Score with Buy/Hold/Avoid verdict. In addition, I also made a web browser for visualization.
+		    </li>
+		    <li style="margin-top: 1rem;"><strong>Software Construction Project</strong>: convert research PDFs into audio files so that users
+		      can listen to research papers. Current text-to-speech tools also convert table contents, headers, and footnotes
+		      to audio, which makes research papers difficult to follow. Our tool identifies and removes
+		      URLs, headers, footnotes, and math formulas, improving users' comprehension of research papers.
+		      Future work includes making automatic text-to-speech tools read math formulas more naturally.
 		      <a href="https://github.com/hanjunLi/130_Project" target="_blank">Software Construction Project</a>
 		      Joint work with Hanjun Li, Sherry Lin, Andres Abdo, Yunsheng Bai.
 		    </li>
@@ -57,10 +55,13 @@
 		<div class="Research">
 		  <h2>Research and Publications</h2>
 		  <ul>
-		    <li>Machine Learning Research--Applying Constraints on Neural Network.
-		      Jingyi Xu, Zilu Zhang, Tal Friedman, Yitao Liang and Guy Van den Broeck.<a href="http://web.cs.ucla.edu/~guyvdb/papers/XuICML18.pdf" target="_blank"> A Semantic Loss Function for Deep Learning with Symbolic Knowledge</a>, In Proceedings of the 35th International Conference on Machine Learning (ICML), 2018.</li>
-		    <li>Algorithm Research--Finding Optimal Solution for the Mutually Exclusive Set Cover Problem. (Individual Project)<a href="https://github.com/JoyXu123/261-Ride-Sharing-Project" target="_blank">project repository </a> </li>
-		    <li>Robotics Research: Evacuation Planning using Hololens and Rtabmap SLAM. (Joint project with Hangxin Liu, Zhenliang Zhang, Yixin Zhu) <a href="https://github.com/JoyXu123/Evacuation_Github" target="_blank"> project repository </a> </li>
+		    <li><strong>Machine Learning Research:</strong> applying constraints on neural networks.
+		      Jingyi Xu, Zilu Zhang, Tal Friedman, Yitao Liang and Guy Van den Broeck.<a href="http://web.cs.ucla.edu/~guyvdb/papers/XuICML18.pdf" target="_blank"> A Semantic Loss Function for Deep Learning with Symbolic Knowledge</a>, In Proceedings of the 35th International Conference on Machine Learning (ICML), 2018.
+		      <span style="margin-left:0.5em; font-size:0.85em; color:#555;">&#128196; 758 citations by 2026</span></li>
+			<li><strong>Graph Embedding Research:</strong> In an attempt to develop a theoretical understanding of the math behind "Why neural network works so well", I compared 6 network-embedding methods from three broad categories: matrix-factorization, random walk approaches, and deep architecture approaches. We demonstrated that matrix factorization methodscorrelate with deep neural network embedding methods. <a href="https://arxiv.org/abs/2012.08019" target="_blank">Understanding Graph Embedding Methods and Their Applications</a></li>
+		    <li><strong>Algorithm Research:</strong> finding an optimal solution for the mutually exclusive set cover problem. (Individual Project)<a href="https://github.com/JoyXu123/261-Ride-Sharing-Project" target="_blank"> project repository</a></li>
+		    <li><strong>Robotics Research:</strong> evacuation planning using HoloLens and RTAB-Map SLAM. (Joint project with Hangxin Liu, Zhenliang Zhang, and Yixin Zhu) <a href="https://github.com/JoyXu123/Evacuation_Github" target="_blank"> project repository</a></li>
+		  </ul>
 		</div><!-- /.Research -->
 
 		<!-- <div class="Classes">
@@ -71,6 +72,7 @@
 		  </ul>
 		</div> -->
 
+		<div class="Classes">
 		<h2>Online Classes Taken Outside School</h2>
 		<table>
 			<tr>
@@ -99,14 +101,12 @@
 				<td>2018</td>
 			</tr>
 		</table>
-		
+		</div><!-- /.Classes -->
 
-
-		
 		<footer>
     		<ul>
-				<li><a href="xu.jingyi1@northeastern.edu">email:xu.jingyi1@northeastern.edu</a></li>
-        		<li><a href="xujingyi666@gmail.com">email:xujingyi666@gmail.com</a></li>
+				<li><a href="mailto:jingyi.xu@siemens.com">Work Email:jingyi.xu@siemens.com</a></li>
+	        		<li><a href="mailto:xujingyi666@gmail.com">Personal Email:xujingyi666@gmail.com</a></li>
         		<li><a href="https://github.com/JoyXu123">github.com/JoyXu123</a></li>
 			</ul>
 		</footer>

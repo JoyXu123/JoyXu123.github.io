@@ -83,12 +83,20 @@ body {
     counter-reset: sidenote-counter; 
 }
 
+.container,
+.Project,
+.Research,
+.hobbyList,
+.Classes {
+    max-width: 46rem;
+}
+
 h1 {
     font-weight: 400;
     margin-top: 2rem;
     margin-bottom: 1.0rem;
     font-size: 3.2rem;
-    line-height: 1; 
+    line-height: 1.1;
 }
 
 h2 {
@@ -97,7 +105,7 @@ h2 {
     margin-top: 2.1rem;
     margin-bottom: 1.4rem;
     font-size: 1.7rem;
-    line-height: 1; 
+    line-height: 1.25;
 }
 
 h3 {
@@ -145,7 +153,7 @@ p,
 ol,
 ul {
     font-size: 1.4rem;
-    line-height: 2rem; 
+    line-height: 2.2rem;
 }
 
 p {
@@ -276,7 +284,16 @@ a:link::-moz-selection {
 
 /* Sidenotes, margin notes, figures, captions */
 img {
-    max-width: 100%; 
+    max-width: 100%;
+    height: auto;
+}
+
+.profile-photo {
+    display: block;
+    width: clamp(10rem, 24vw, 14rem);
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .sidenote,
@@ -411,12 +428,13 @@ label.margin-toggle:not(.sidenote-number) {
 }
 .topnav {
     font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
     background-color: #333;
   }
   
 .topnav a {
-    float: left;
+    display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -433,8 +451,53 @@ label.margin-toggle:not(.sidenote-number) {
     background-color: #04AA6D;
     color: white;
 }
+
+/* Remove Tufte gradient underline from nav links — it renders as a cream stripe on the dark bar */
+.topnav a:link,
+.topnav a:visited {
+    background: none;
+    text-shadow: none;
+    text-decoration: none;
+}
 table, th, td {
     border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.45rem 0.6rem;
+    text-align: left;
+}
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    margin-top: 2rem;
+    padding-top: 0.5rem;
+    font-size: 1.1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 1.5rem;
+}
+
+p.intro {
+    font-size: 1.6rem;
+    font-style: italic;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
 }
 
 @media (max-width: 760px) {
@@ -510,7 +573,15 @@ table, th, td {
 
     div.table-wrapper,
     table {
-        width: 85%; 
+        width: 100%;
+    }
+
+    .topnav a {
+        flex: 1 1 100%;
+    }
+
+    .profile-photo {
+        width: min(70vw, 13rem);
     }
     
     img {
