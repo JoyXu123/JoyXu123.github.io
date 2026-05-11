@@ -290,7 +290,7 @@ img {
 
 .profile-photo {
     display: block;
-    width: clamp(10rem, 24vw, 14rem);
+    width: clamp(2.5rem, 6vw, 3.5rem);
     max-width: 100%;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
@@ -580,11 +580,11 @@ p.intro {
         flex: 1 1 100%;
     }
 
-    .profile-photo {
-        width: min(70vw, 13rem);
-    }
-    
     img {
         width: 100%;
+    }
+
+    .profile-photo {
+        width: min(17.5vw, 3.25rem);
     } 
 }
