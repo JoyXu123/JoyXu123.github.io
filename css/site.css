@@ -21,7 +21,7 @@ body {
     background-color: #ffffff;
     color: #222;
     line-height: 1.75;
-    max-width: 860px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 2rem 4rem;
 }
@@ -98,10 +98,45 @@ a:hover {
 /* ----- Profile photo ----- */
 .profile-photo {
     display: block;
-    width: 42px !important;
-    height: auto !important;
-    border-radius: 50%;
+    width: 160px;
+    height: auto;
+    object-fit: cover;
+    object-position: 20% 15%;
     margin-bottom: 1rem;
+}
+
+/* ----- Intro two-column layout ----- */
+.intro-layout {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.intro-left {
+    flex: 0 0 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.intro-contact p {
+    font-size: 0.85rem;
+    margin-bottom: 0.35rem;
+    color: #555;
+    word-break: break-all;
+}
+
+.intro-right {
+    flex: 1;
+}
+
+.chinese-name {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 0.4rem;
+    font-family: "LiSu", "Microsoft YaHei", "STHeiti", serif;
 }
 
 /* ----- Content sections ----- */
@@ -193,6 +228,18 @@ p.intro {
 
 /* ----- Responsive (phones) ----- */
 @media (max-width: 600px) {
+    .intro-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-left {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
     body {
         padding: 0 1rem 3rem;
     }
@@ -221,6 +268,6 @@ p.intro {
     }
 
     .profile-photo {
-        width: 42px !important;
+        width: 120px;
     }
 }
