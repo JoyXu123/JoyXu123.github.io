@@ -165,6 +165,12 @@ li:last-child {
     margin-bottom: 0;
 }
 
+/* Compact list — for short items that need less vertical breathing room */
+.list-compact li {
+    margin-bottom: 0.15rem;
+    line-height: 1.5;
+}
+
 /* ----- Table ----- */
 table {
     width: 100%;
