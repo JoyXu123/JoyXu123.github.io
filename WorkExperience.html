@@ -19,21 +19,27 @@
     <p class="intro">Insights and lessons I've picked up from working as a software engineer across research and industry.</p>
 
     <div class="hobbyList">
+        <h2>Experiences of Using AI</h2>
+        <ul>
+            <li><strong>Process Engineering around LLM:</strong> AI productivity is less about using a single model and more about imagining workflows and building small tools around the model to augment yourself. All the different design and workflow are essentially process engineering around LLMs. By envisioning how AI can help with different tasks, I can build lightweight tools—such as sub-agents, skills, reference documents, and specialized bots—to amplify my software development workflow.
+                <ul>
+                    <li>Build Specialized AI Bots: Provide the prompt, source code, and existing documentation to the AI model to create the markdown files needed for the bot. This specific set of markdown files with LLM is the domain-expert I can ask questions.</li>
+                </ul>
+            </li>
+            <li><strong>Debugging with AI:</strong> For debugging difficult instances like memory leak issues, I find it more effective to write comprehensive test cases and log sufficient information and stack traces to the syslog. With AI, rich logs can often speed up debugging much more than stepping through code with breakpoints. </li>
+        </ul>
+    </div>
+
+    <div class="hobbyList">
         <h2>Things I learned about Computer Science &amp; Architectural Design</h2>
         Many of the skills I picked up before AI-assisted development. I learned and gained some of the advice from our company's principal engineers.
         <ul>
             <li><strong>Break Down Questions, and Find Answers in Codebase:</strong> Codebase is the most reliable source of truth. When I have a technical question, but I do not know how to find the answer from code. That is most likely because my question is not specific or small enough. I need to break down the question into smaller, more manageable parts that can be answered by examining the code. A non-specific question would be like "How does this feature work?" A more specific question would be like "Where is the entry point of this feature?", "What are the key data structures involved?", "What is the input and output?", "What issue does this feature solve?"</li>
             <li><strong>Debugging:</strong> One effective way of debugging is to guess where the error is before looking closely at the code. </li>
             <li><strong>Ask for documentation</strong> If I need to ask my colleagues questions, I will ask for documentation as well. If a colleague can solve an issue that I am struggling with, there is often an information gap between us. Having access to the documentation helps me close that gap and become more self-sufficient. It also saves my colleagues' valuable uninterrupted time. </li>
+            <li><strong>Build the Skeleton First, Even if It Could Be Wrong:</strong> Reading large amounts of documentation—such as during a project ramp-up—can be overwhelming. My approach is to first imagine myself as the system architect and think about how I would design the system. This gives me a mental skeleton. As I read, information that fits the skeleton gets absorbed naturally as flesh. Information that contradicts my design prompts me to revisit and refine the skeleton. This way, I can ramp up faster in unfamiliar areas.</li>
+            <li><strong>Don't Stop at the Interface: Follow the Logic to the Bottom</strong>I used to focus only on understanding enough to finish the task. A system architect I greatly admire taught me to keep asking, "What is happening underneath?" and to follow the code down to its lowest level. He also constantly questioned whether there were alternative ways to solve the problem. Practicing this habit has helped me eliminate unnecessary abstractions and write cleaner, more maintainable code.</li>
 
-        </ul>
-    </div>
-
-    <div class="hobbyList">
-        <h2>Reflections on Using AI</h2>
-        <ul>
-            <li><strong>Process Engineering around LLM:</strong> All the different design and workflow are essentially process engineering around LLMs.</li>
-            <li><strong>AI can be biased and should be used with caution:</strong> </li>
         </ul>
     </div>
 
